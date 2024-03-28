@@ -10,12 +10,6 @@ export default function App() {
     setTags([...tags, tag]);
   };
 
-  const deleteTag = (index) => {
-    const updatedTags = [...tags];
-    updatedTags.splice(index, 1);
-    setTags([updatedTags]);
-  };
-
   const handleDeleteTag = (tagToDelete) => {
     const updatedTags = tags.filter((tag) => tag !== tagToDelete);
     setTags(updatedTags);
